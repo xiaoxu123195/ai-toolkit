@@ -1,0 +1,71 @@
+host,models
+http://54.226.219.28:11434/v1,
+http://34.57.198.96:5000/v1,benevolentjoker/nsfwmonika:latest
+http://34.226.211.67:11434/v1,"llama2:latest, qwen2.5:0.5b, mistral-nemo:latest, gemma2:latest, llama3.2:latest, nomic-embed-text:latest, phi3.5:latest"
+http://50.126.45.75:11434/v1,"deepseek-r1:latest, deepseek-r1:8b, starling-lm:latest, smollm2:135m, mistral:7b, llama3.2:latest, llama3.1:latest, llama2-uncensored:7b, dolphin-mistral:7b"
+http://20.232.74.4:11434/v1,
+http://147.182.242.47:5001/v1,mistral:latest
+http://35.225.142.31:11434/v1,deepseek-r1:latest
+http://35.208.171.141:80/v1,"hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF:Llama-3.2-3B-Instruct-Q8_0.gguf, hf.co/Qwen/Qwen2.5-3B-Instruct-GGUF:qwen2.5-3b-instruct-q8_0.gguf, hf.co/bartowski/SmallThinker-3B-Preview-GGUF:SmallThinker-3B-Preview-Q8_0.gguf"
+http://192.222.58.60:8000/v1,"deepseek-r1:7b-qwen-distill-q8_0, deepseek-r1:14b-qwen-distill-q8_0, deepseek-r1:8b-llama-distill-q8_0, deepseek-r1:1.5b-qwen-distill-q8_0, tela-o1-mini:latest, tela-vision:latest, llama3.2-vision:11b-instruct-q8_0, tela-deepseek-r1:latest, leeaandrob/deepseek-r1:latest, deepseek-r1:latest, deepseek-r1-cline-1.5b100000k:latest, deepseek-r1-cline-1.5b3k:latest, deepseek-r1-cline-14b16k:latest, deepseek-r1-cline-8b8k:latest, deepseek-r1-cline-32b32k:latest, deepseek-r1:671b-q8_0, deepseek-r1:70b-llama-distill-q8_0, deepseek-r1:32b-qwen-distill-fp16, deepseek-r1:32b-qwen-distill-q8_0, llama3:instruct, llama3.2:3b-instruct-fp16, mixtral:8x7b-instruct-v0.1-q8_0, mistral-small:22b-instruct-2409-fp16, phi4:14b-fp16, tela-gpt4:latest, tela-o1:latest, tela-gpt4o:latest, tela-phi3:latest, phi3.5:3.8b-mini-instruct-fp16, qwq:32b-preview-fp16, llama3.2-vision:11b-instruct-fp16, llama3.3:70b-instruct-q8_0, nemotron:70b-instruct-q8_0, marco-o1:7b-fp16, llama3.1:70b-instruct-fp16, qwen2.5-coder:32b, qwen2.5-coder:14b, llama2-uncensored:7b, wizard-vicuna-uncensored:13b, llama3.1:latest, llama3.2:3b-instruct-q8_0, mistral-small:22b-instruct-2409-q8_0, qwq:32b-preview-q8_0, marco-o1:7b-q8_0, phi3.5:3.8b-mini-instruct-q8_0, qwq:latest, marco-o1:latest, technobyte/llama-3.1-nemotron-70b-instruct:iq2_xs, llama3.2-vision:11b, phi3:14b, bespoke-minicheck:latest, nemotron:70b, phi3:latest"
+http://64.191.166.202:80/v1,"deepseek-r1:7b, llama3.2:latest, phi3.5:latest, qwen2.5:7b, qwen2.5:3b, qwen2.5:1.5b, qwen2.5:14b, qwen2.5:latest, dolphin-llama3:8b-256k, dolphin-llama3:latest, killphish_test2:latest, killphish_test:latest, llama3:70b, mario:latest, llama3:latest"
+http://128.95.204.54:11434/v1,"smollm2:135m, deepseek-r1:32b, llama3:latest"
+http://45.79.8.162:11434/v1,"llama2:latest, deepseek-r1:1.5b"
+http://34.16.50.129:11434/v1,"smollm2:135m, llama3.1:latest"
+http://13.60.157.83:11434/v1,
+http://38.47.52.166:8123/v1,qwen2.5:3b
+http://184.105.157.223:11434/v1,"smollm2:135m, llama2:latest, llama3.1:latest"
+http://52.26.248.132:11434/v1,"llama2:latest, mistral:latest"
+http://184.105.157.112:11434/v1,
+http://64.181.224.199:11434/v1,"smollm2:135m, llama2:latest, mistral:latest"
+http://72.146.53.17:80/v1,"deepseek-r1:70b, llama3.2:latest"
+http://149.160.109.22:11434/v1,"smollm2:135m, qwen2.5:32b, llava:latest, llama3.2:latest, llama3.1:latest, dolphin-llama3:latest"
+http://4.156.254.145:80/v1,gemma2:27b
+http://34.226.165.0:80/v1,
+http://68.183.144.244:11434/v1,"llama3:latest, deepseek-r1:1.5b"
+http://73.101.102.2:11434/v1,"llama3.2:latest, nomic-embed-text:latest, smollm2:135m, openchat:latest"
+http://34.160.37.221:80/v1,"mistral:latest, llama3.2:latest, deepseek-r1:latest, qwen2:latest, mxbai-embed-large:latest"
+http://98.82.58.171:11434/v1,"qwen2.5:1.5b, codellama:7b, llama3.2:latest"
+http://35.225.142.31:80/v1,deepseek-r1:latest
+http://192.119.70.75:80/v1,llama3.2:1b
+http://34.110.190.52:80/v1,llama3.2:latest
+http://34.36.184.10:80/v1,
+http://173.231.255.151:11434/v1,"dolphin3:8b-llama3.1-fp16, qwen2.5:1.5b, qwen2.5:0.5b, llama3.2:latest, qwen:0.5b, llama3-groq-tool-use:70b, llama3.1:latest, llama3-groq-tool-use:latest, mistral-nemo:latest, llama3:70b-instruct, llama2:latest"
+http://73.54.149.16:11434/v1,"deepseek-r1:1.5b, huihui_ai/llama3.2-abliterate:1b, smollm2:135m, phi3:latest, llama3.2:3b-instruct-q4_K_M, gemma:2b, qwen2.5:1.5b, qwen2.5:0.5b, llama3.2:1b-instruct-q4_K_M, llama3.2:1b, tinydolphin:latest, tinyllama:latest"
+http://54.164.154.61:11434/v1,
+http://209.159.156.42:11434/v1,
+http://165.1.68.43:11434/v1,"llama2:latest, llama3.1:8b, nomic-embed-text:latest"
+http://108.51.236.124:8080/v1,"llama3.1:8b, granite3.1-dense:8b, qwen2.5-coder:latest"
+https://209.141.61.226:443/v1,
+https://74.235.184.70:443/v1,
+http://34.27.175.138:11434/v1,"llama3.1:latest, qwen:14b, llama3.3:latest, deepseek-r1:32b, deepseek-r1:70b, deepseek-r1:latest, llama3.2:latest"
+http://173.208.247.7:11434/v1,llava:latest
+http://67.217.54.142:11434/v1,"nabzrupertsupportvbeta0.1-mini:latest, qwen2.5-coder:14b, halov2:latest, qwen2.5:3b, qwen2.5:1.5b, qwen2:1.5b, sam4096/qwen2tools:1.5b, steamdj/llama3.1-cpu-only:latest, zephyr:latest, nezahatkorkmaz/deepseek-v3:latest, deepseek-r1:1.5b, halov1:latest, deepseek-coder-v2:latest, llama3.1:latest, ALIENTELLIGENCE/jarvisv2:latest, mistral:7b, qwen2:0.5b, mistral-nemo:latest, qwen2.5-coder:3b, llava:latest, deepseek-v2:latest, deepseek-llm:latest, deepseek-r1:latest"
+https://98.189.145.134:443/v1,
+http://54.160.148.187:11434/v1,"qwen2.5:1.5b, bge-m3:latest, nomic-embed-text:latest, llama3.1:latest"
+http://35.209.32.234:8080/v1,"mistral:latest, llama3.2:latest, deepseek-r1:latest, qwen2:latest, mxbai-embed-large:latest"
+https://20.121.60.100:443/v1,
+https://54.69.244.234:443/v1,
+https://3.132.54.120:443/v1,
+http://20.42.96.198:11434/v1,
+https://34.239.144.132:443/v1,
+http://3.17.61.100:11434/v1,llama3.2-vision:latest
+http://143.110.239.109:8089/v1,"mistral2:latest, nomic-embed-text:latest, llama3:latest, mistral:latest, qwen:4b, llama3.2:latest, deepseek-r1:1.5b, llama3.1:latest"
+http://129.159.34.170:5050/v1,
+http://73.217.23.224:11434/v1,"deepseek-r1:70b, llama3.3:latest, Llama-3_1-Nemotron-51B-Instruct-Q6_K_L:latest, llava:34b-v1.6-q6_K, llava:7b-v1.6, dolphin-2.9.4-gemma2-2b-f16:latest, dolphin3:8b-llama3.1-fp16, llama3.2:3b-instruct-fp16, llama3.2:1b-instruct-fp16, rjmalagon/dolphin-2.9.4-llama3.1-8b:f16, Llama-3.1-Nemotron-70B-Instruct-HF-abliterated-Q4_K_M:latest, dolphin-2.9-llama3:70b-IQ4_NL, gemma-2:27b-it-IQ4_XS, llava:34b-v1.6, mxbai-embed-large:latest"
+http://107.174.67.31:11434/v1,
+http://154.38.175.230:11434/v1,"qwen2.5:latest, phi4:latest, llama3.1:latest, llama3:latest"
+http://147.182.139.149:11434/v1,"llama3.1:latest, nomic-embed-text:latest"
+http://47.190.129.126:11434/v1,deepseek-r1:7b
+http://108.181.252.243:11434/v1,"smollm2:135m, llama3.2:latest, qwen2.5:1.5b, dolphin-mistral:latest, llama3.1:latest"
+http://32.218.134.95:11434/v1,deepseek-r1:1.5b
+http://34.29.213.43:11434/v1,"smollm2:135m, llama2:latest, all-minilm:33m, llama3.1:latest"
+http://154.12.243.186:11434/v1,
+http://67.53.132.136:3001/v1,"qwen2.5-coder:32b, deepseek-r1:32b, codestral:22b-v0.1-q8_0, codestral:latest, llama3:70b-instruct-q3_K_S, llama3:70b-instruct-q3_K_M, llama3:70b, granite-code:20b-instruct-q4_0, granite-code:20b, dolphincoder:latest, phi3:instruct, phi3:latest, mannix/dolphin-2.9-llama3-8b:latest, dolphin-mixtral:latest, llava-llama3:8b-v1.1-fp16, llama3:latest, dolphincoder:15b, dolphin-llama3:latest, deepseek-coder:6.7b, codeqwen:latest"
+http://178.156.147.97:11434/v1,
+http://69.197.150.18:11434/v1,"qwen2.5:1.5b, smollm2:135m, nemotron:latest, llama3.1:70b"
+http://147.182.209.255:11434/v1,llama3.2:latest
+http://44.243.92.59:11434/v1,"jimscard/whiterabbit-neo:latest, llama2:latest, llama3.1:latest, llama3.1:8b"
+http://172.200.209.112:11434/v1,"qwen2.5:1.5b, qwen2.5:0.5b, smollm2:135m, llama2:latest, gemma2:latest, llama3.1:latest, llama3:latest, gemma:7b, gemma:latest, mistral-nemo:latest, qwen2:latest, mistral:latest, deepseek-coder-v2:latest, phi3:latest"
+http://176.114.88.91:11434/v1,"llama2:latest, qwen2.5:1.5b, qwen2.5:32b"
+http://170.106.119.108:11434/v1,"llama3.2-vision:latest, qwen2.5:latest, aiden_lu/minicpm-v2.6:Q4_K_M"
