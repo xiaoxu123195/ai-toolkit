@@ -2,6 +2,10 @@
 
 使用get_key获取当前电脑上安装的trae部分信息用于docker部署
 
+使用get_token获取当前电脑上安装的trea的token以及当前token的过期时间
+
+token的过期时间也可以在网站`https://jwt.io/` 中进行查询，当前获取token的有效期大概是3天左右
+
 
 ```dockerfile
 docker run -d \
@@ -30,3 +34,7 @@ docker run -d `
 
 ```
 
+# 查看当前作者是否更新了当前库
+1. `docker pull linqiu1199/trae2api:latest`
+
+2. 或者访问`https://hub.docker.com/r/linqiu1199/trae2api/tags` 查看
