@@ -1,0 +1,205 @@
+2025-03-26 12:42:53 | INFO | Relingo自动注册程序开始运行...
+2025-03-26 12:42:53 | INFO | 按 Ctrl+C 停止程序
+2025-03-26 12:42:55 | INFO | 任务 1 开始注册
+2025-03-26 12:42:56 | INFO | 任务 2 开始注册
+2025-03-26 12:42:56 | INFO | Get domain:indigobook.com
+2025-03-26 12:42:56 | INFO | Get acount:pruduguz_crix@indigobook.com
+2025-03-26 12:42:57 | INFO | 任务 3 开始注册
+2025-03-26 12:42:57 | INFO | Get domain:indigobook.com
+2025-03-26 12:42:57 | INFO | Get acount:tagifep_phochub873@indigobook.com
+2025-03-26 12:42:57 | INFO | acounts:{"@context":"\/contexts\/Account","@id":"\/accounts\/67e385b5cbd88119e10185b8","@type":"Account","id":"67e385b5cbd88119e10185b8","address":"pruduguz_crix@indigobook.com","quota":40000000,"used":0,"isDisabled":false,"isDeleted":false,"createdAt":"2025-03-26T04:42:29+00:00","updatedAt":"2025-03-26T04:42:29+00:00"}
+2025-03-26 12:42:58 | INFO | Get domain:indigobook.com
+2025-03-26 12:42:58 | INFO | Get acount:roxiz_ser230@indigobook.com
+2025-03-26 12:42:58 | INFO | acounts:{"@context":"\/contexts\/Account","@id":"\/accounts\/67e385b65c440ef409093c14","@type":"Account","id":"67e385b65c440ef409093c14","address":"tagifep_phochub873@indigobook.com","quota":40000000,"used":0,"isDisabled":false,"isDeleted":false,"createdAt":"2025-03-26T04:42:30+00:00","updatedAt":"2025-03-26T04:42:30+00:00"}
+2025-03-26 12:42:58 | INFO | get_token:{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NDI5NjQxNTAsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJhZGRyZXNzIjoicHJ1ZHVndXpfY3JpeEBpbmRpZ29ib29rLmNvbSIsImlkIjoiNjdlMzg1YjVjYmQ4ODExOWUxMDE4NWI4IiwibWVyY3VyZSI6eyJzdWJzY3JpYmUiOlsiL2FjY291bnRzLzY3ZTM4NWI1Y2JkODgxMTllMTAxODViOCJdfX0.JZrYL1g4pean-lT1y-AreB6RBrc4lbj5HNf5ULt0Bxc6FtPevnMMZKWBUusUZKLrLL-pFq9NgKBY8b0ZFd7tgw","@id":"\/accounts\/67e385b5cbd88119e10185b8","id":"67e385b5cbd88119e10185b8"}
+2025-03-26 12:42:59 | INFO | acounts:{"@context":"\/contexts\/Account","@id":"\/accounts\/67e385b7ec3ed5eccb070311","@type":"Account","id":"67e385b7ec3ed5eccb070311","address":"roxiz_ser230@indigobook.com","quota":40000000,"used":0,"isDisabled":false,"isDeleted":false,"createdAt":"2025-03-26T04:42:31+00:00","updatedAt":"2025-03-26T04:42:31+00:00"}
+2025-03-26 12:42:59 | INFO | get_token:{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NDI5NjQxNTEsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJhZGRyZXNzIjoidGFnaWZlcF9waG9jaHViODczQGluZGlnb2Jvb2suY29tIiwiaWQiOiI2N2UzODViNjVjNDQwZWY0MDkwOTNjMTQiLCJtZXJjdXJlIjp7InN1YnNjcmliZSI6WyIvYWNjb3VudHMvNjdlMzg1YjY1YzQ0MGVmNDA5MDkzYzE0Il19fQ.SkHsOwSDEYSCfZ3CQybjYVBvKFzBDuLzjPO1qFqMkIN9NK39dYz31MxY8dg7sfed9l7i34ug1aFjKyfXcRRRUg","@id":"\/accounts\/67e385b65c440ef409093c14","id":"67e385b65c440ef409093c14"}
+2025-03-26 12:42:59 | INFO | Relingo_SendCode:{"code":0,"message":null,"data":{}}
+2025-03-26 12:43:00 | INFO | get_token:{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NDI5NjQxNTIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJhZGRyZXNzIjoicm94aXpfc2VyMjMwQGluZGlnb2Jvb2suY29tIiwiaWQiOiI2N2UzODViN2VjM2VkNWVjY2IwNzAzMTEiLCJtZXJjdXJlIjp7InN1YnNjcmliZSI6WyIvYWNjb3VudHMvNjdlMzg1YjdlYzNlZDVlY2NiMDcwMzExIl19fQ.4LAvEwL52gIt9CxhZdwBXpBHNQI9F9uEQzdDPO-QRhkDJWxcirV5qIWauuMvzJFS8kMWY6-m_9tvwreCNuVkeg","@id":"\/accounts\/67e385b7ec3ed5eccb070311","id":"67e385b7ec3ed5eccb070311"}
+2025-03-26 12:43:00 | INFO | Relingo_SendCode:{"code":0,"message":null,"data":{}}
+2025-03-26 12:43:00 | INFO | 等待邮件中... (1/15)
+2025-03-26 12:43:01 | INFO | Relingo_SendCode:{"code":0,"message":null,"data":{}}
+2025-03-26 12:43:02 | INFO | 等待邮件中... (1/15)
+2025-03-26 12:43:03 | INFO | 等待邮件中... (1/15)
+2025-03-26 12:43:04 | INFO | Get message:relingo Relingo，验证码： 9708 website Twitter facebook email © Relingo 2022. All rights reserved.
+2025-03-26 12:43:04 | INFO | Relingo_Reg:{"code":0,"message":null,"data":{"id":"67e385bc24e4a34e5981e63d","avatar":"","email":"pruduguz_crix@indigobook.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTM4NWJjMjRlNGEzNGU1OTgxZTYzZCIsImlhdCI6MTc0Mjk2NDE1NiwiZXhwIjoxNzU4NTE2MTU2fQ.Yu9MVeYPOOOVDJBWYE6i_wXd2YOLzJ5ILd7GfLJO83E","expiredAt":0,"planId":"FREE","affId":"","isEdu":false,"affStatus":"","lifetimeMember":false,"credits":null}}
+2025-03-26 12:43:04 | SUCCESS | 任务 1 注册成功! 总成功次数: 1
+2025-03-26 12:43:04 | INFO | 当前批次完成: 1/3
+2025-03-26 12:43:05 | INFO | Get message:relingo Relingo，验证码： 9881 website Twitter facebook email © Relingo 2022. All rights reserved.
+2025-03-26 12:43:06 | INFO | Relingo_Reg:{"code":0,"message":null,"data":{"id":"67e385bd8266cc85f90c595d","avatar":"","email":"tagifep_phochub873@indigobook.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTM4NWJkODI2NmNjODVmOTBjNTk1ZCIsImlhdCI6MTc0Mjk2NDE1NywiZXhwIjoxNzU4NTE2MTU3fQ.rV7zLLnLE3nKDTCmPTQuGw1nAopghQceZC-aFm-oIaI","expiredAt":0,"planId":"FREE","affId":"","isEdu":false,"affStatus":"","lifetimeMember":false,"credits":null}}
+2025-03-26 12:43:06 | SUCCESS | 任务 2 注册成功! 总成功次数: 2
+2025-03-26 12:43:06 | INFO | 当前批次完成: 2/3
+2025-03-26 12:43:06 | INFO | Get message:relingo Relingo，验证码： 6621 website Twitter facebook email © Relingo 2022. All rights reserved.
+2025-03-26 12:43:06 | INFO | Relingo_Reg:{"code":0,"message":null,"data":{"id":"67e385be8266cc85f90c5961","avatar":"","email":"roxiz_ser230@indigobook.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTM4NWJlODI2NmNjODVmOTBjNTk2MSIsImlhdCI6MTc0Mjk2NDE1OCwiZXhwIjoxNzU4NTE2MTU4fQ.Z_RgrxVDX-b4HJugkwc_iTFy7R-GqorRXvp7eNQfUEo","expiredAt":0,"planId":"FREE","affId":"","isEdu":false,"affStatus":"","lifetimeMember":false,"credits":null}}
+2025-03-26 12:43:06 | SUCCESS | 任务 3 注册成功! 总成功次数: 3
+2025-03-26 12:43:06 | INFO | 当前批次完成: 3/3
+2025-03-26 12:43:06 | INFO | 当前总成功次数: 3 | 失败次数: 0
+2025-03-26 12:43:10 | INFO | 任务 4 开始注册
+2025-03-26 12:43:11 | INFO | 任务 5 开始注册
+2025-03-26 12:43:12 | INFO | Get domain:indigobook.com
+2025-03-26 12:43:12 | INFO | Get acount:dredican_vujaq@indigobook.com
+2025-03-26 12:43:12 | INFO | 任务 6 开始注册
+2025-03-26 12:43:13 | INFO | Get domain:indigobook.com
+2025-03-26 12:43:13 | INFO | Get acount:cocus247_qazuly@indigobook.com
+2025-03-26 12:43:13 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:43:13 | WARNING | 尝试 1/3: 创建账户失败，重试中...
+2025-03-26 12:43:14 | INFO | Get domain:indigobook.com
+2025-03-26 12:43:14 | INFO | Get acount:thotraq295_mujalab@indigobook.com
+2025-03-26 12:43:14 | INFO | acounts:{"@context":"\/contexts\/Account","@id":"\/accounts\/67e385c66a9590097b067e3d","@type":"Account","id":"67e385c66a9590097b067e3d","address":"cocus247_qazuly@indigobook.com","quota":40000000,"used":0,"isDisabled":false,"isDeleted":false,"createdAt":"2025-03-26T04:42:46+00:00","updatedAt":"2025-03-26T04:42:46+00:00"}
+2025-03-26 12:43:15 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:43:15 | WARNING | 尝试 1/3: 创建账户失败，重试中...
+2025-03-26 12:43:15 | INFO | get_token:{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NDI5NjQxNjcsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJhZGRyZXNzIjoiY29jdXMyNDdfcWF6dWx5QGluZGlnb2Jvb2suY29tIiwiaWQiOiI2N2UzODVjNjZhOTU5MDA5N2IwNjdlM2QiLCJtZXJjdXJlIjp7InN1YnNjcmliZSI6WyIvYWNjb3VudHMvNjdlMzg1YzY2YTk1OTAwOTdiMDY3ZTNkIl19fQ.CtQ9ZrrFxmhfutLYyasGntQNHcrlAZ5Ubgkc_E-zIiEIoCbWjFMz6_KJvTRF-_JY9DcOQxmhFLpqhMes0ZirWA","@id":"\/accounts\/67e385c66a9590097b067e3d","id":"67e385c66a9590097b067e3d"}
+2025-03-26 12:43:16 | INFO | Get domain:indigobook.com
+2025-03-26 12:43:16 | INFO | Get acount:dredican_vujaq@indigobook.com
+2025-03-26 12:43:16 | INFO | Relingo_SendCode:{"code":0,"message":null,"data":{}}
+2025-03-26 12:43:17 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:43:17 | WARNING | 尝试 2/3: 创建账户失败，重试中...
+2025-03-26 12:43:17 | INFO | 等待邮件中... (1/15)
+2025-03-26 12:43:18 | INFO | Get domain:indigobook.com
+2025-03-26 12:43:18 | INFO | Get acount:thotraq295_mujalab@indigobook.com
+2025-03-26 12:43:19 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:43:19 | WARNING | 尝试 2/3: 创建账户失败，重试中...
+2025-03-26 12:43:20 | INFO | Get domain:indigobook.com
+2025-03-26 12:43:20 | INFO | Get acount:dredican_vujaq@indigobook.com
+2025-03-26 12:43:21 | INFO | Get message:relingo Relingo，验证码： 1229 website Twitter facebook email © Relingo 2022. All rights reserved.
+2025-03-26 12:43:21 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:43:21 | WARNING | 尝试 3/3: 创建账户失败，重试中...
+2025-03-26 12:43:21 | INFO | Relingo_Reg:{"code":0,"message":null,"data":{"id":"67e385cd2b209f20cb585a4d","avatar":"","email":"cocus247_qazuly@indigobook.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTM4NWNkMmIyMDlmMjBjYjU4NWE0ZCIsImlhdCI6MTc0Mjk2NDE3MywiZXhwIjoxNzU4NTE2MTczfQ.be0fbOUHkNWIyurjEVPsx1DdxM7BDOxFw0ik0Vgh_Yg","expiredAt":0,"planId":"FREE","affId":"","isEdu":false,"affStatus":"","lifetimeMember":false,"credits":null}}
+2025-03-26 12:43:21 | SUCCESS | 任务 5 注册成功! 总成功次数: 4
+2025-03-26 12:43:21 | INFO | 当前批次完成: 1/3
+2025-03-26 12:43:22 | INFO | Get domain:indigobook.com
+2025-03-26 12:43:22 | INFO | Get acount:thotraq295_mujalab@indigobook.com
+2025-03-26 12:43:23 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:43:23 | WARNING | 尝试 3/3: 创建账户失败，重试中...
+2025-03-26 12:43:24 | INFO | Relingo_SendCode:{"code":0,"message":null,"data":{}}
+2025-03-26 12:43:24 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:24 | INFO | 等待邮件中... (1/15)
+2025-03-26 12:43:26 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:26 | INFO | 等待邮件中... (2/15)
+2025-03-26 12:43:27 | INFO | Relingo_SendCode:{"code":0,"message":null,"data":{}}
+2025-03-26 12:43:27 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:27 | INFO | 等待邮件中... (1/15)
+2025-03-26 12:43:28 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:28 | INFO | 等待邮件中... (3/15)
+2025-03-26 12:43:29 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:29 | INFO | 等待邮件中... (2/15)
+2025-03-26 12:43:30 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:30 | INFO | 等待邮件中... (4/15)
+2025-03-26 12:43:31 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:31 | INFO | 等待邮件中... (3/15)
+2025-03-26 12:43:32 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:32 | INFO | 等待邮件中... (5/15)
+2025-03-26 12:43:33 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:33 | INFO | 等待邮件中... (4/15)
+2025-03-26 12:43:34 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:34 | INFO | 等待邮件中... (6/15)
+2025-03-26 12:43:35 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:35 | INFO | 等待邮件中... (5/15)
+2025-03-26 12:43:36 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:36 | INFO | 等待邮件中... (7/15)
+2025-03-26 12:43:37 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:37 | INFO | 等待邮件中... (6/15)
+2025-03-26 12:43:38 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:38 | INFO | 等待邮件中... (8/15)
+2025-03-26 12:43:39 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:39 | INFO | 等待邮件中... (7/15)
+2025-03-26 12:43:40 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:40 | INFO | 等待邮件中... (9/15)
+2025-03-26 12:43:41 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:41 | INFO | 等待邮件中... (8/15)
+2025-03-26 12:43:42 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:42 | INFO | 等待邮件中... (10/15)
+2025-03-26 12:43:43 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:43 | INFO | 等待邮件中... (9/15)
+2025-03-26 12:43:44 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:44 | INFO | 等待邮件中... (11/15)
+2025-03-26 12:43:45 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:45 | INFO | 等待邮件中... (10/15)
+2025-03-26 12:43:46 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:46 | INFO | 等待邮件中... (12/15)
+2025-03-26 12:43:47 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:47 | INFO | 等待邮件中... (11/15)
+2025-03-26 12:43:48 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:48 | INFO | 等待邮件中... (13/15)
+2025-03-26 12:43:49 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:49 | INFO | 等待邮件中... (12/15)
+2025-03-26 12:43:50 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:50 | INFO | 等待邮件中... (14/15)
+2025-03-26 12:43:51 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:51 | INFO | 等待邮件中... (13/15)
+2025-03-26 12:43:52 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:52 | INFO | 等待邮件中... (15/15)
+2025-03-26 12:43:53 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:53 | INFO | 等待邮件中... (14/15)
+2025-03-26 12:43:54 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:54 | WARNING | 多次检查未收到邮件，邮箱可能有问题: dredican_vujaq@indigobook.com
+2025-03-26 12:43:54 | ERROR | 未收到验证码邮件
+2025-03-26 12:43:54 | WARNING | 任务 4 注册失败 (尝试 1/5)
+2025-03-26 12:43:54 | INFO | 任务 4 跳过当前邮箱，尝试新邮箱
+2025-03-26 12:43:55 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:55 | INFO | 等待邮件中... (15/15)
+2025-03-26 12:43:56 | INFO | Get domain:indigobook.com
+2025-03-26 12:43:56 | INFO | Get acount:qerin911_vanier@indigobook.com
+2025-03-26 12:43:57 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:43:57 | WARNING | 多次检查未收到邮件，邮箱可能有问题: thotraq295_mujalab@indigobook.com
+2025-03-26 12:43:57 | ERROR | 未收到验证码邮件
+2025-03-26 12:43:57 | WARNING | 任务 6 注册失败 (尝试 1/5)
+2025-03-26 12:43:57 | INFO | 任务 6 跳过当前邮箱，尝试新邮箱
+2025-03-26 12:43:57 | INFO | acounts:{"@context":"\/contexts\/Account","@id":"\/accounts\/67e385f0b0b5c04d080eac08","@type":"Account","id":"67e385f0b0b5c04d080eac08","address":"qerin911_vanier@indigobook.com","quota":40000000,"used":0,"isDisabled":false,"isDeleted":false,"createdAt":"2025-03-26T04:43:28+00:00","updatedAt":"2025-03-26T04:43:28+00:00"}
+2025-03-26 12:43:58 | INFO | Get domain:indigobook.com
+2025-03-26 12:43:58 | INFO | Get acount:ther635_framox@indigobook.com
+2025-03-26 12:43:58 | INFO | get_token:{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NDI5NjQyMTAsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJhZGRyZXNzIjoicWVyaW45MTFfdmFuaWVyQGluZGlnb2Jvb2suY29tIiwiaWQiOiI2N2UzODVmMGIwYjVjMDRkMDgwZWFjMDgiLCJtZXJjdXJlIjp7InN1YnNjcmliZSI6WyIvYWNjb3VudHMvNjdlMzg1ZjBiMGI1YzA0ZDA4MGVhYzA4Il19fQ.lwA4N6C62bz4bRDFvkboLUgZuJkd7Ek4Rat7ple6jWhbWNSGDeXadyY_crDYXS47QviaU2eTaBKnSRr_bHQHZQ","@id":"\/accounts\/67e385f0b0b5c04d080eac08","id":"67e385f0b0b5c04d080eac08"}
+2025-03-26 12:43:59 | INFO | acounts:{"@context":"\/contexts\/Account","@id":"\/accounts\/67e385f30009020b7c08a3a8","@type":"Account","id":"67e385f30009020b7c08a3a8","address":"ther635_framox@indigobook.com","quota":40000000,"used":0,"isDisabled":false,"isDeleted":false,"createdAt":"2025-03-26T04:43:31+00:00","updatedAt":"2025-03-26T04:43:31+00:00"}
+2025-03-26 12:43:59 | INFO | Relingo_SendCode:{"code":0,"message":null,"data":{}}
+2025-03-26 12:44:00 | INFO | 等待邮件中... (1/15)
+2025-03-26 12:44:00 | INFO | get_token:{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NDI5NjQyMTIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJhZGRyZXNzIjoidGhlcjYzNV9mcmFtb3hAaW5kaWdvYm9vay5jb20iLCJpZCI6IjY3ZTM4NWYzMDAwOTAyMGI3YzA4YTNhOCIsIm1lcmN1cmUiOnsic3Vic2NyaWJlIjpbIi9hY2NvdW50cy82N2UzODVmMzAwMDkwMjBiN2MwOGEzYTgiXX19.ewR-Cdv8fpIyClFa7VDxOzbjXSk4QySqoIjyOHdj_AD-0f_C41IVmWa7-ScauZHIL-GjMwDGlongu1RLsHPZRw","@id":"\/accounts\/67e385f30009020b7c08a3a8","id":"67e385f30009020b7c08a3a8"}
+2025-03-26 12:44:02 | INFO | Relingo_SendCode:{"code":0,"message":null,"data":{}}
+2025-03-26 12:44:03 | INFO | 等待邮件中... (1/15)
+2025-03-26 12:44:04 | INFO | Get message:relingo Relingo，验证码： 0272 website Twitter facebook email © Relingo 2022. All rights reserved.
+2025-03-26 12:44:04 | INFO | Relingo_Reg:{"code":0,"message":null,"data":{"id":"67e385f864ed28f1d9acdb11","avatar":"","email":"qerin911_vanier@indigobook.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTM4NWY4NjRlZDI4ZjFkOWFjZGIxMSIsImlhdCI6MTc0Mjk2NDIxNiwiZXhwIjoxNzU4NTE2MjE2fQ.AA7I0NqGa4oyh51dXrwIiclSwtuQ9D5uHyUM3Q4szeg","expiredAt":0,"planId":"FREE","affId":"","isEdu":false,"affStatus":"","lifetimeMember":false,"credits":null}}
+2025-03-26 12:44:04 | SUCCESS | 任务 4 注册成功! 总成功次数: 5
+2025-03-26 12:44:04 | INFO | 当前批次完成: 2/3
+2025-03-26 12:44:06 | INFO | Get message:relingo Relingo，验证码： 4835 website Twitter facebook email © Relingo 2022. All rights reserved.
+2025-03-26 12:44:07 | INFO | Relingo_Reg:{"code":0,"message":null,"data":{"id":"67e385fa8266cc85f90c5a95","avatar":"","email":"ther635_framox@indigobook.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTM4NWZhODI2NmNjODVmOTBjNWE5NSIsImlhdCI6MTc0Mjk2NDIxOCwiZXhwIjoxNzU4NTE2MjE4fQ.P33004cM8IbNlWwgkU1jDfOb8xqCz1H2Ism7Ed9ZN70","expiredAt":0,"planId":"FREE","affId":"","isEdu":false,"affStatus":"","lifetimeMember":false,"credits":null}}
+2025-03-26 12:44:07 | SUCCESS | 任务 6 注册成功! 总成功次数: 6
+2025-03-26 12:44:07 | INFO | 当前批次完成: 3/3
+2025-03-26 12:44:07 | INFO | 当前总成功次数: 6 | 失败次数: 0
+2025-03-26 12:44:11 | INFO | 任务 7 开始注册
+2025-03-26 12:44:12 | INFO | 任务 8 开始注册
+2025-03-26 12:44:12 | INFO | Get domain:indigobook.com
+2025-03-26 12:44:12 | INFO | Get acount:pruly_fretion@indigobook.com
+2025-03-26 12:44:13 | INFO | 任务 9 开始注册
+2025-03-26 12:44:13 | INFO | Get domain:indigobook.com
+2025-03-26 12:44:13 | INFO | Get acount:pocicaz_riligrul@indigobook.com
+2025-03-26 12:44:13 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:44:13 | WARNING | 尝试 1/3: 创建账户失败，重试中...
+2025-03-26 12:44:14 | INFO | Get domain:indigobook.com
+2025-03-26 12:44:14 | INFO | Get acount:kishub905_brepoh@indigobook.com
+2025-03-26 12:44:14 | INFO | acounts:{"@context":"\/contexts\/Account","@id":"\/accounts\/67e38602ee84e641bb0d5dd8","@type":"Account","id":"67e38602ee84e641bb0d5dd8","address":"pocicaz_riligrul@indigobook.com","quota":40000000,"used":0,"isDisabled":false,"isDeleted":false,"createdAt":"2025-03-26T04:43:46+00:00","updatedAt":"2025-03-26T04:43:46+00:00"}
+2025-03-26 12:44:15 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:44:15 | WARNING | 尝试 1/3: 创建账户失败，重试中...
+2025-03-26 12:44:15 | INFO | get_token:{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NDI5NjQyMjcsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJhZGRyZXNzIjoicG9jaWNhel9yaWxpZ3J1bEBpbmRpZ29ib29rLmNvbSIsImlkIjoiNjdlMzg2MDJlZTg0ZTY0MWJiMGQ1ZGQ4IiwibWVyY3VyZSI6eyJzdWJzY3JpYmUiOlsiL2FjY291bnRzLzY3ZTM4NjAyZWU4NGU2NDFiYjBkNWRkOCJdfX0.kyXZRUpR0zLrfmA2A84FYRn-SQDcpHJfxsfZ2qkgM2v_FlFVO73sD6FWQpnwxeT1gDBlgGIE11QeJHfnNjq-8g","@id":"\/accounts\/67e38602ee84e641bb0d5dd8","id":"67e38602ee84e641bb0d5dd8"}
+2025-03-26 12:44:16 | INFO | Get domain:indigobook.com
+2025-03-26 12:44:16 | INFO | Get acount:pruly_fretion@indigobook.com
+2025-03-26 12:44:17 | INFO | Relingo_SendCode:{"code":0,"message":null,"data":{}}
+2025-03-26 12:44:17 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:44:17 | WARNING | 尝试 2/3: 创建账户失败，重试中...
+2025-03-26 12:44:18 | INFO | 等待邮件中... (1/15)
+2025-03-26 12:44:18 | INFO | Get domain:indigobook.com
+2025-03-26 12:44:18 | INFO | Get acount:kishub905_brepoh@indigobook.com
+2025-03-26 12:44:19 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:44:19 | WARNING | 尝试 2/3: 创建账户失败，重试中...
+2025-03-26 12:44:20 | INFO | Get domain:indigobook.com
+2025-03-26 12:44:20 | INFO | Get acount:pruly_fretion@indigobook.com
+2025-03-26 12:44:21 | INFO | Get message:relingo Relingo，验证码： 4920 website Twitter facebook email © Relingo 2022. All rights reserved.
+2025-03-26 12:44:22 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:44:22 | WARNING | 尝试 3/3: 创建账户失败，重试中...
+2025-03-26 12:44:22 | INFO | Relingo_Reg:{"code":0,"message":null,"data":{"id":"67e3860964ed28f1d9acdb6c","avatar":"","email":"pocicaz_riligrul@indigobook.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTM4NjA5NjRlZDI4ZjFkOWFjZGI2YyIsImlhdCI6MTc0Mjk2NDIzMywiZXhwIjoxNzU4NTE2MjMzfQ.dc9YEacmmeVUFMqERfdRV-IiyWk4pt8EdypY6ujTjoo","expiredAt":0,"planId":"FREE","affId":"","isEdu":false,"affStatus":"","lifetimeMember":false,"credits":null}}
+2025-03-26 12:44:22 | SUCCESS | 任务 8 注册成功! 总成功次数: 7
+2025-03-26 12:44:22 | INFO | Get domain:indigobook.com
+2025-03-26 12:44:22 | INFO | Get acount:kishub905_brepoh@indigobook.com
+2025-03-26 12:44:24 | ERROR | 创建账户失败: 状态码 429
+2025-03-26 12:44:24 | WARNING | 尝试 3/3: 创建账户失败，重试中...
+2025-03-26 12:44:25 | INFO | Relingo_SendCode:{"code":0,"message":null,"data":{}}
+2025-03-26 12:44:25 | ERROR | 获取消息时出错: 'MailTmClient' object has no attribute 'token'
+2025-03-26 12:44:25 | INFO | 等待邮件中... (1/15)
