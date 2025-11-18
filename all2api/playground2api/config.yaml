@@ -1,0 +1,4 @@
+session_tokens:
+access_key: sk-123
+port: 8000
+cache_model_list: true # 缓存模型列表
