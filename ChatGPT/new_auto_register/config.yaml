@@ -1,0 +1,20 @@
+# 注册数量
+count: 3
+
+# 并发数 (1 为串行)
+max_workers: 1
+
+# 上传配置 CLIProxyAPI 0:False，1:True
+upload: 0
+upload_url:
+upload_token:
+
+# 邮箱服务配置 moe mail
+email_api:
+email_api_key:
+email_domain:
+
+# 是否输出日志到文件  0:False，1:True
+log_to_file: 0
+
+# https://chatgpt.com/api/auth/session  获取账号信息  待实现：输出账号-密码-accToken
