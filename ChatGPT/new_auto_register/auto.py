@@ -3,6 +3,8 @@ import os
 import re
 import sys
 import time
+import random
+import string
 import secrets
 import hashlib
 import base64
@@ -84,6 +86,22 @@ def get_oai_code(email_id: str, cfg: dict) -> str:
             if m:
                 return m.group(1)
         time.sleep(3)
+
+
+# ========== 密码生成 ==========
+
+def generate_random_password(length=16):
+    """生成符合 OpenAI 要求的随机密码"""
+    chars = string.ascii_letters + string.digits + "!@#$%"
+    pwd = list(
+        random.choice(string.ascii_uppercase)
+        + random.choice(string.ascii_lowercase)
+        + random.choice(string.digits)
+        + random.choice("!@#$%")
+        + "".join(random.choice(chars) for _ in range(length - 4))
+    )
+    random.shuffle(pwd)
+    return "".join(pwd)
 
 
 # ========== OAuth ==========
@@ -281,6 +299,9 @@ def run(cfg: dict) -> str:
     did = s.cookies.get("oai-did")
     log.info(f"oai-did: {did}")
 
+    password = generate_random_password()
+    log.info(f"密码: {password}")
+
     signup_body = f'{{"username":{{"value":"{email}","kind":"email"}},"screen_hint":"signup"}}'
     sen_req_body = f'{{"p":"","id":"{did}","flow":"authorize_continue"}}'
     sen_resp = requests.post("https://sentinel.openai.com/backend-api/sentinel/req",
@@ -300,13 +321,24 @@ def run(cfg: dict) -> str:
         log.error(f"signup 失败: {signup_resp.text}")
         return None
 
-    otp_resp = s.post("https://auth.openai.com/api/accounts/passwordless/send-otp",
-                      headers={"referer": "https://auth.openai.com/create-account/password",
-                               "accept": "application/json", "content-type": "application/json"})
-    log.info(f"send-otp: {otp_resp.status_code}")
-    if otp_resp.status_code != 200:
-        log.error(f"send-otp 失败: {otp_resp.text}")
+    # 步骤2: 用密码注册 (替代旧的 passwordless/send-otp)
+    register_body = json.dumps({"username": email, "password": password})
+    register_resp = s.post("https://auth.openai.com/api/accounts/user/register",
+                           headers={"referer": "https://auth.openai.com/create-account/password",
+                                    "accept": "application/json", "content-type": "application/json",
+                                    "openai-sentinel-token": sentinel},
+                           data=register_body)
+    log.info(f"register: {register_resp.status_code}")
+    if register_resp.status_code not in (200, 301, 302):
+        log.error(f"register 失败: {register_resp.text}")
         return None
+
+    # 步骤3: 触发邮箱验证码发送 (GET 请求)
+    s.get("https://auth.openai.com/api/accounts/email-otp/send",
+          headers={"referer": "https://auth.openai.com/create-account/password"})
+    s.get("https://auth.openai.com/email-verification",
+          headers={"referer": "https://auth.openai.com/create-account/password"})
+    log.info("email-otp/send 触发完成")
 
     code = get_oai_code(email_id, cfg)
     if not code:
