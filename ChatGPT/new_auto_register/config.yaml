@@ -17,4 +17,5 @@ email_domain:
 # 是否输出日志到文件  0:False，1:True
 log_to_file: 0
 
-# https://chatgpt.com/api/auth/session  获取账号信息  待实现：输出账号-密码-accToken
+# register_token.py 输出的 accessToken 文件 (每行一个，相对路径基于脚本目录)
+access_token_file: ac/tokens.txt
