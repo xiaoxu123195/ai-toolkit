@@ -85,6 +85,29 @@ accessToken 获取成功 (长度 ...)               # 成功
 
 ---
 
+## 图形界面 / 打包 exe
+
+### 直接用 GUI（源码运行）
+需要带 `tkinter` 的 Python（精简版可能没有 tkinter，可用标准 python.org 版），并装 `ttkbootstrap`：
+```bash
+pip install ttkbootstrap
+python gui.py
+```
+界面里填邮箱服务/Key/域名、数量、并发，点「开始」即可；设置会存回 `config.yaml`，日志实时显示，可「停止」。
+
+### 打包成 `gptregister.exe`
+双击 `build.bat`（或在项目目录执行），它会用 `C:\Python313`（自带 tkinter）安装依赖并打包：
+```bat
+build.bat
+```
+产物：`dist\gptregister.exe`（约 30MB，单文件）。使用要点：
+- 把 `config.yaml` 放到 **exe 同级目录**（首次没有也能在界面里填写后自动生成）；
+- `ac\`、`logs\` 会写在 exe 同级目录；
+- **运行的机器必须装有 node 且在 PATH 中**（本方案不打包 node）；
+- `openai_sentinel_quickjs.js` 已打进 exe，无需单独携带。
+
+---
+
 ## 工作原理
 
 ### 注册链路（register_token.py）

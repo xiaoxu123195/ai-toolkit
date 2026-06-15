@@ -27,10 +27,26 @@ import yaml
 import requests as std_requests
 from curl_cffi import requests
 
+
+# ========== 路径 (兼容 PyInstaller 打包) ==========
+
+def _resource_dir() -> str:
+    """只读资源 (openai_sentinel_quickjs.js) 所在目录。"""
+    return getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+
+
+def _app_dir() -> str:
+    """可写文件 (config.yaml / ac / logs) 所在目录: 打包后为 exe 同级目录。"""
+    if getattr(sys, "frozen", False):
+        return os.path.dirname(sys.executable)
+    return os.path.dirname(os.path.abspath(__file__))
+
+
 # ========== 日志 ==========
 
 log = logging.getLogger("register_token")
 _token_lock = threading.Lock()
+STOP = threading.Event()  # GUI「停止」用：置位后中断后续账号与验证码轮询
 
 
 def setup_logging(log_to_file: bool):
@@ -40,8 +56,10 @@ def setup_logging(log_to_file: bool):
     ch.setFormatter(fmt)
     log.addHandler(ch)
     if log_to_file:
-        os.makedirs("logs", exist_ok=True)
-        fh = logging.FileHandler(f"logs/{time.strftime('%Y%m%d_%H%M%S')}_token.log", encoding="utf-8")
+        logs_dir = os.path.join(_app_dir(), "logs")
+        os.makedirs(logs_dir, exist_ok=True)
+        fh = logging.FileHandler(os.path.join(logs_dir, f"{time.strftime('%Y%m%d_%H%M%S')}_token.log"),
+                                 encoding="utf-8")
         fh.setFormatter(fmt)
         log.addHandler(fh)
 
@@ -68,6 +86,8 @@ def get_oai_code(email_id: str, cfg: dict) -> str:
     api_key = cfg["email_api_key"]
     regex = r"\b(\d{6})\b"
     for _ in range(60):
+        if STOP.is_set():
+            return ""
         resp = std_requests.get(f"{api_base}/api/emails/{email_id}", headers={"X-API-Key": api_key}, timeout=10)
         resp.raise_for_status()
         messages = resp.json().get("messages", [])
@@ -112,8 +132,10 @@ DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
               "(KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36")
 DEFAULT_SEC_CH_UA = '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-QUICKJS_SCRIPT = os.path.join(BASE_DIR, "openai_sentinel_quickjs.js")
+BASE_DIR = _app_dir()
+QUICKJS_SCRIPT = os.path.join(_resource_dir(), "openai_sentinel_quickjs.js")
+# Windows 下让 node 子进程静默运行(不弹控制台窗口；--windowed 打包时尤为关键)
+_CREATE_NO_WINDOW = getattr(subprocess, "CREATE_NO_WINDOW", 0)
 _sdk_cache_path = None
 _sdk_lock = threading.Lock()
 
@@ -238,6 +260,7 @@ def _run_quickjs_action(action: str, sdk_file: str, payload: dict, timeout_ms: i
         input=json.dumps(body, ensure_ascii=False),
         capture_output=True, text=True, encoding="utf-8",
         timeout=max(10, timeout_ms // 1000 + 5),
+        creationflags=_CREATE_NO_WINDOW,
         env={**os.environ,
              "OPENAI_SENTINEL_SDK_FILE": sdk_file,
              "OPENAI_SENTINEL_QUICKJS_SCRIPT": QUICKJS_SCRIPT,
@@ -382,6 +405,17 @@ def _auth_headers(did: str, referer: str, sentinel: str = "") -> dict:
 
 # ========== 网页注册流程 ==========
 
+def _has_session_cookie(s) -> bool:
+    """是否已拿到 chatgpt 登录态 cookie(NextAuth 大 token 会分片成 .0/.1，故用前缀匹配)。"""
+    try:
+        for c in s.cookies:
+            if getattr(c, "name", "").startswith("__Secure-next-auth.session-token"):
+                return True
+    except Exception:
+        pass
+    return False
+
+
 def _follow_to_session(s, cont: str):
     """跟随 continue_url 重定向链，直到 chatgpt 回调写入 __Secure-next-auth.session-token。"""
     if not cont:
@@ -391,7 +425,7 @@ def _follow_to_session(s, cont: str):
     url = cont
     for _ in range(20):
         resp = s.get(url, allow_redirects=False)
-        if s.cookies.get("__Secure-next-auth.session-token"):
+        if _has_session_cookie(s):
             return
         if resp.status_code not in (301, 302, 303, 307, 308):
             return
@@ -517,8 +551,6 @@ def register_and_get_token(cfg: dict) -> str:
 
     # 9. 跟随 continue_url -> chatgpt 回调写入 session-token
     _follow_to_session(s, cont)
-    if not s.cookies.get("__Secure-next-auth.session-token"):
-        log.warning("未拿到 session-token")
 
     # 10. 取 accessToken
     r = s.get(f"{CHATGPT_BASE}/api/auth/session",
@@ -534,6 +566,8 @@ def register_and_get_token(cfg: dict) -> str:
 # ========== 单任务 / 入口 ==========
 
 def register_one(index: int, total: int, cfg: dict) -> bool:
+    if STOP.is_set():
+        return False
     log.info(f"===== 第 {index}/{total} 个账号 =====")
     try:
         token = register_and_get_token(cfg)
@@ -555,7 +589,7 @@ def register_one(index: int, total: int, cfg: dict) -> bool:
 
 
 def main():
-    config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yaml")
+    config_path = os.path.join(_app_dir(), "config.yaml")
     with open(config_path, "r", encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
 
