@@ -1,18 +1,18 @@
 # 注册数量
-count: 3
+count: 1
 
 # 并发数 (1 为串行)
 max_workers: 1
 
 # 上传配置 CLIProxyAPI 0:False，1:True
 upload: 0
-upload_url:
-upload_token:
+upload_url: http://35.212.247.92:8317/v0/management/auth-files
+upload_token: admin123456
 
 # 邮箱服务配置 moe mail
-email_api:
-email_api_key:
-email_domain:
+email_api: https://mail.jntml.me
+email_api_key: your_email_api_key
+email_domain: jntml.me
 
 # 是否输出日志到文件  0:False，1:True
 log_to_file: 0
