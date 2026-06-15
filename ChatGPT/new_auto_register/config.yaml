@@ -4,15 +4,15 @@ count: 1
 # 并发数 (1 为串行)
 max_workers: 1
 
-# 上传配置 CLIProxyAPI 0:False，1:True
+# 上传配置 CLIProxyAPI 0:False，1:True (仅 auto.py 用)
 upload: 0
-upload_url: http://35.212.247.92:8317/v0/management/auth-files
-upload_token: admin123456
+upload_url: http://your-cliproxy-host:8317/v0/management/auth-files
+upload_token: your_upload_token
 
-# 邮箱服务配置 moe mail
-email_api: https://mail.jntml.me
+# 邮箱服务配置 moe mail (填你自己的)
+email_api: https://your-moemail-host
 email_api_key: your_email_api_key
-email_domain: jntml.me
+email_domain: your-domain.com
 
 # 是否输出日志到文件  0:False，1:True
 log_to_file: 0
